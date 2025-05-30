@@ -24,7 +24,7 @@ document.getElementById('loadUsersBtn').addEventListener('click', () => {
   // Вказуємо кількість записів, наприклад 1 (або до 5)
   const count = 1;
 
-  fetch(`http://labmaryna.whf.bz/data.php?count=${count}`)
+  fetch(`data.php?count=${count}`)
     .then(response => {
       if (!response.ok) throw new Error('Помилка мережі');
       return response.json();
